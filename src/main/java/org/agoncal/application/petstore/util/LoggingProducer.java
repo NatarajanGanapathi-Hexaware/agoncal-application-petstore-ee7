@@ -17,7 +17,7 @@ public class LoggingProducer {
     // ======================================
 
     @Produces
-    public Logger produceLogger(InjectionPoint injectionPoint) {
-        return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName());
+    public Logger produceLogger() {
+        return Logger.getGlobal();
     }
 }
