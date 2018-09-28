@@ -14,7 +14,6 @@ public class LoggingProducer {
     // =          Business methods          =
     // ======================================
 
-    @Produces
     public Logger produceLogger() {
         return Logger.getGlobal();
     }
